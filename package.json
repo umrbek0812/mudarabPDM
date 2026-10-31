@@ -1,0 +1,17 @@
+{
+  "name": "islamic-bank-mudaraba-pdm-simulator",
+  "version": "1.0.0",
+  "description": "Islamic Bank Mudaraba Profit Distribution Management (PDM), Multi-Pool M:N Tagging, Weightage Waterfall, Treasury ALM, and 12-Scenario Simulator",
+  "main": "server.js",
+  "bin": {
+    "pdm-cli": "./pdm-cli.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node pdm-cli.js",
+    "scenarios": "node pdm-cli.js --all-scenarios",
+    "weightage": "node pdm-cli.js --weightage",
+    "waterflow": "node pdm-cli.js --waterflow 1",
+    "export": "node pdm-cli.js --export simulation_report.json"
+  }
+}
